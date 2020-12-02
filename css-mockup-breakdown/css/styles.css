@@ -1,0 +1,87 @@
+#login-container {
+  width: 335px;
+  height: 420px;
+  border: 2px black solid;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 175px;
+  box-shadow: 0px 5px 10px #9a9a9a;
+}
+
+#login-header {
+  height: 50px;
+  background-color: #000000;
+  padding: 10px;
+}
+
+#login-content {
+  padding: 20px;
+}
+
+h1{
+  margin: 0px;
+  padding: 0px;
+  color: #ffffff;
+  font-size: 26px;
+  font-family: Arial;
+  text-align: center;
+}
+
+h2{
+  margin: 0 0 24px 0;
+  padding: 0px;
+  font-family: Arial;
+  font-size: 17px;
+  text-align: center;
+}
+
+.login-input {
+  width: 236px;
+  height: 10px;
+  padding: 12px 15px 12px 15px;
+  margin: 0 10px 20px 10px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+
+#submit{
+  width: 270px;
+  height: 40px;
+  padding: 10px 15px 12px 15px;
+  margin: 0 10px 20px 10px;
+  border-radius: 10px;
+  background-color: #ff8400;
+  color: #ffffff;
+  font-size: 17px;
+  border-width: 0;
+}
+
+#createaccount{
+  width: 270px;
+  height: 40px;
+  padding: 10px 15px 12px 15px;
+  margin: 0 10px 20px 10px;
+  border-radius: 10px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 17px;
+  border-width: 0;
+}
+.forget-pass:link,
+.forget-pass:visited,
+.forget-pass:hover,
+.forget-pass:active {
+  font-size: 14px;
+  color: black;
+  margin-left: 12px;
+  font-family: arial;
+}
+
+.settings{
+  float: right;
+  margin-right: 14px;
+}
+
+.close{
+  margin-left: 300px;
+}

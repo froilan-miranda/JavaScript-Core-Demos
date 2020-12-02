@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Work Enquiry Form</title>
+  </head>
+  <body>
+    <h1>Work Enquiry Form</h1>
+    <form action="/process-contact-form" method="post">
+
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" placeholder="Enter First Name" required><br><br>
+
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" placeholder="Enter Last Name" required><br><br>
+
+        <label for="cname">Company:</label>
+        <input type="text" id="cname" name="cname" placeholder="Enter Company"><br><br>
+
+        <label for="phone">Enter your phone number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="000-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="region">Where are you located:</label>
+        <select id="region" name="region">
+          <option value="northamerica">N. America</option>
+          <option value="southamerica">S. America</option>
+          <option value="europe" >Europe</option>
+          <option value="africa">Africa</option>
+          <option value="asia" selected>Asia</option>
+        </select><br><br>
+
+        <label for="homepage">Add your homepage:</label>
+        <input type="url" id="homepage" name="homepage"><br><br>
+
+        <label for="secret">Share a secret:</label>
+        <input type="password" id="secret" name="secret"><br><br>
+
+        <label for="favcolor">Select your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor"><br><br>
+
+        <fieldset>
+          <legend>Work Details:</legend>
+
+          <label>What Type of Work</label><br>
+          <input type="radio" id="consultant" name="worktype" value="consultant">
+          <label for="consultant">Consultant</label><br>
+          <input type="radio" id="speaker" name="worktype" value="speaker">
+          <label for="speaker">Speaker</label><br>
+          <input type="radio" id="other" name="worktype" value="other">
+          <label for="other">Other</label><br><br>
+
+          <label>What Type of Tech</label><br>
+
+          <input type="checkbox" id="tech1" name="tech1" value="appdevelopment">
+          <label for="tech1">Application Development</label><br>
+
+
+          <input type="checkbox" id="tech2" name="tech2" value="cloudarch">
+          <label for="tech2">Cloud Architechure</label><br>
+          <input type="checkbox" id="tech3" name="tech3" value="ai" checked>
+          <label for="tech3">Arificial Inteligence</label><br>
+          <input type="checkbox" id="tech4" name="tech4" value="arvrxr">
+          <label for="tech4">AR/VR/XR</label><br>
+          <input type="checkbox" id="tech5" name="tech5" value="puppies">
+          <label for="tech5">Puppysiter</label><br><br>
+
+          <input type="button" onclick="alert('Puppies!')" value="More Info"><br><br>
+
+          <label for="rate">Hourly Rate:</label>
+          <input type="number" id="rate" name="rate" min="75" step="5" value="75"><br><br>
+
+          <label for="startdate">Start Date:</label>
+          <input type="date" id="startdate" name="startdate"><br><br>
+
+          <label for="supportingfile">Upload Supporting File:</label>
+          <input type="file" id="supportingfile" name="supportingfile"><br><br>
+
+          <label for="message">Leave additional info</label><br>
+          <textarea name="message" id="message"></textarea><br><br>
+        </fieldset><br>
+
+        <input type="submit" value="Send It!">
+        <input type="reset">
+    </form>
+  </body>
+</html>
